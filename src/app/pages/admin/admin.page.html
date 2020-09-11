@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Admin</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+  <ion-item *ngIf="!show_Admin">
+    <ion-label position="floating">Admin Key</ion-label>
+    <ion-input type="text" name="admin" placeholder="admin_key" (keyup)="admin_input($event.target.value)" required></ion-input>
+  </ion-item>
+  <div *ngIf="show_Admin">
+  
+<ion-list-header color="light">Add New News👇</ion-list-header>
+<form [formGroup]="NewsForm" (ngSubmit)="submitNews(NewsForm.value)" padding-right>
+  <ion-item>
+    <ion-label position="floating">Title</ion-label>
+    <ion-input type="text" formControlName="title" required></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">description</ion-label>
+    <ion-textarea type="text" rows="6" cols="10" formControlName="description" required></ion-textarea>
+  </ion-item>
+ 
+  <ion-button 
+    color="primary" 
+    expand="block" 
+    [disabled]="!NewsForm.valid" 
+  type="submit">Add News</ion-button>
+</form>
+</div>
+</ion-content>

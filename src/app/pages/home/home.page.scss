@@ -1,0 +1,83 @@
+
+  /* Container holding the image and the text */
+ 
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  
+  
+  
+  /* Top left text */
+  .top-left {
+    position: absolute;
+    top: 8%;
+    left: 25%;
+    font-family: cursive;
+    font-size: 23px;
+  }
+  .second {
+    position: absolute;
+    top: 30%;
+    left: 29%;
+    font-family: cursive;
+    font-size: 23px;
+  }
+  .third {
+    position: absolute;
+    top: 55%;
+    left: 25%;
+    font-family: cursive;
+    font-size: 23px;
+    color: chartreuse;
+  }
+  .fourth {
+    position: absolute;
+    top: 75%;
+    left: 29%;
+    font-family: cursive;
+    font-size: 23px;
+    color:turquoise;
+  }
+.bg-image {
+    /* The image used */
+    background-image: url("/assets/img/corona.jpg");
+  
+    /* Add the blur effect */
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+  
+    /* Full height */
+    //height: 40%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .graph_size
+  {
+    width: 100%;
+    height: 100%;
+  }
+
+  .button1
+{
+  margin-left: 30%;
+  margin-top: -10px;
+  margin-bottom: -10px;
+    font-size: 10px;
+}
+.graph_button
+{
+  
+  margin-top: -10px;
+  margin-bottom: -10px;
+    font-size: 10px;
+}
+
+  /* Position text in the middle of the page/image */
+ 

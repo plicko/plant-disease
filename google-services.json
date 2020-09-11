@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "76151864937",
+    "firebase_url": "https://corona-231ac.firebaseio.com",
+    "project_id": "corona-231ac",
+    "storage_bucket": "corona-231ac.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:76151864937:android:74aeab08ac23c252376cf8",
+        "android_client_info": {
+          "package_name": "com.AsquareDigitals.corona"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "76151864937-67j45lj5okv6eo458mjp73fmi4gorfvo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCTPD9FbJsUfnWj7JYvbQPoCApMAHWDAew"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "76151864937-67j45lj5okv6eo458mjp73fmi4gorfvo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

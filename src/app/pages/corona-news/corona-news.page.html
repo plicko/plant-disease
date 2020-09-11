@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title> News</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div *ngIf="!news_add">
+    <a [href]='personal_url'><img width="100%" height="40px" [src]='personal_image'></a>
+  </div>
+  <!-- <ion-card *ngFor="let article of all_news" class="main"> -->
+    <ion-card *ngFor="let article of all_news " class="main">
+   
+    <ion-card-header>
+      <h6 class="sub-title" style="text-align: right;margin-top: -11px;"> {{article.date | date :'short'}}</h6>
+      <ion-card-subtitle class="title">{{article.title}}</ion-card-subtitle>
+      <hr  style="background: chocolate;margin-left: -18px;
+      width: 113%;
+  ">
+    </ion-card-header>
+    <ion-card-content>
+      <p class="sub-title">
+        {{article.description}}
+      </p>
+      <!-- <ion-button ion-button fill="outline" href="{{article.url}}" large>Read full article</ion-button> -->
+
+    </ion-card-content>
+  </ion-card>
+</ion-content>

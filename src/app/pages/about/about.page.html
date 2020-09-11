@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>About</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card class="speaker-card">
+    
+
+
+
+
+    <ion-card-content *ngIf="about_data">
+    
+      <h3>We are the team of software developers and designers.We provide you a app in which you can find out any decease of tomato with their prevention and pesticides information</h3>
+      <h2>If You have any suggestion then you can contact with us.</h2>
+      <div *ngIf="about_data[0].show">
+      <h3 style="margin-top: 20px;">You Can Follow Us On Instagram <br>
+        <a href="{{about_data[0].dev1_insta}}">Pavan</a>,<a href="{{about_data[0].dev2_insta}}">Akshay</a> ,<a href="{{about_data[0].dev3_insta}}"> prasad </a></h3>
+        <h3 style="margin-top: 15px;">You Can Join with Us On LinkIn <br>
+          <a href="{{about_data[0].dev1_linkin}}">Pavan</a>,<a href="{{about_data[0].dev2_linkin}}">Akshay</a>  ,<a href="{{about_data[0].dev3_linkin}}">prasad</a></h3>
+        </div>
+      </ion-card-content>
+     
+  </ion-card>
+  <form [formGroup]="suggestionForm" (ngSubmit)="submit(suggestionForm.value)" padding-right>
+    <ion-item>
+      <ion-label position="floating">Type Your suggestion</ion-label>
+    
+      <ion-textarea type="textarea" rows="6" cols="20" formControlName="suggestion"></ion-textarea>
+    </ion-item>
+   
+    <ion-button 
+      color="primary" 
+      expand="block" 
+      [disabled]="!suggestionForm.valid" 
+    type="submit">Submit</ion-button>
+</form>
+
+
+</ion-content>

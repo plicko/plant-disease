@@ -1,0 +1,44 @@
+<ion-header no-border>
+  <ion-toolbar>
+    <ion-buttons slot="end">
+      <ion-button color='primary' (click)="startApp()" [hidden]="!showSkip">Skip</ion-button>
+    </ion-buttons>
+    <ion-button fill="clear" style="margin-left: 66%;" (click)="startApp()" [hidden]="showSkip">
+      Continue
+      <ion-icon slot="end" name="arrow-forward"></ion-icon>
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen >
+  <ion-slides #slides (ionSlideWillChange)="onSlideChangeStart($event)" pager="true">
+    
+    <ion-slide>
+      <img src="assets/img/walk5.jpg" class="slide-image" />
+      <!-- <h4 >Whole World Effect From </h4>
+      <b>Corona-Virus</b> -->
+    </ion-slide>
+    <ion-slide>
+      <img src="assets/img/walk1.jpg" class="slide-image" />
+      <!-- <h2 class="slide-title">
+        STAY HOME .
+        <b>STAY SAFE .</b> -->
+      <!-- </h2> -->
+    </ion-slide>
+
+    <ion-slide>
+      <img src="assets/img/walk2.jpg" class="slide-image" />
+      <!-- <h2 class="slide-title">MAINTAIN SOCIAL </h2>
+      <b>DISTANCE</b> -->
+    
+       
+    </ion-slide>
+
+    <ion-slide>
+      <img src="assets/img/walk3.jpg" class="last"/>
+      <!-- <h3 class="slide-title">WASH YOUR </h3>
+      <b>HANDS </b> -->
+     
+    </ion-slide>
+  </ion-slides>
+</ion-content>
